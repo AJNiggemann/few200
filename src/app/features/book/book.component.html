@@ -1,29 +1,6 @@
-<div class="form-group">
-  <label>Title:</label>
-  <input class="form-control"
-         #title>
-  <label>Author:</label>
-  <input class="form-control"
-         #author>
-  <button type="button"
-          class="btn btn-outline-secondary">Format</button>
-  <button type="button"
-          class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item"
-       href="#">Hardcover</a>
-    <a class="dropdown-item"
-       href="#">Paperback</a>
-    <a class="dropdown-item"
-       href="#">E-Book</a>
-  </div>
-  <input type="button"
-         class="btn btn-primary"
-         (click)="insert(title)"
-         value="Add Book">
+<div class="row">
+  <app-bookentry></app-bookentry>
+</div>
+<div class="row">
+  <app-booklist></app-booklist>
 </div>

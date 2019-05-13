@@ -1,7 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { AddedBook } from '../../actions/add.book';
-import { State } from '../../reducers/books.reducer';
 
 @Component({
   selector: 'app-booklist',
@@ -10,16 +7,11 @@ import { State } from '../../reducers/books.reducer';
 })
 export class BooklistComponent implements OnInit {
 
-  constructor(private store: Store<State>) { }
+  // @Input() books: TodoItem[] = [];
+
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  insert(book: HTMLInputElement) {
-    const task = book.value;
-    this.store.dispatch(new AddedBook(task));
-    book.value = '';
-    book.focus();
   }
 
 }

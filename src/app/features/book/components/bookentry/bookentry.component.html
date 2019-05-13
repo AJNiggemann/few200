@@ -1,0 +1,18 @@
+<div class="form-group">
+  <label>Title:</label>
+  <input class="form-control"
+         #title>
+  <label>Author:</label>
+  <input class="form-control"
+         #author>
+  <label>Format:</label>
+  <select>
+    <option value="Hardcoded">"Hardcoded"</option>
+    <option value="Paperback">"Paperback"</option>
+    <option value="E-Book">"E-Book"</option>
+  </select>
+  <input type="button"
+         class="btn btn-primary"
+         (click)="insert(title)"
+         value="Add Book">
+</div>

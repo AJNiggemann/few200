@@ -2,8 +2,6 @@
 import * as actions from '../actions/counter.actions';
 import { tassign } from 'tassign'; // got there by using [npm i tassign]
 
-
-
 export interface State {
   count: number;
   by: 1 | 3 | 5;

@@ -21,6 +21,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { CounterEffects } from './effects/counter.effects';
 import { TodoModule } from './features/todo/todo.module';
 import { BookComponent } from './features/book/book.component';
+import { BookEntryComponent } from './features/book/components/bookentry/bookentry.component';
 import { BooklistComponent } from './features/book/components/booklist/booklist.component';
 
 @NgModule({
@@ -35,6 +36,7 @@ import { BooklistComponent } from './features/book/components/booklist/booklist.
     RightComponent,
     CounterComponent,
     BookComponent,
+    BookEntryComponent,
     BooklistComponent
   ],
   imports: [
