@@ -23,6 +23,7 @@ import { TodoModule } from './features/todo/todo.module';
 import { BookComponent } from './features/book/book.component';
 import { BookEntryComponent } from './features/book/components/bookentry/bookentry.component';
 import { BooklistComponent } from './features/book/components/booklist/booklist.component';
+import { BookModule } from './features/book/book.module';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { BooklistComponent } from './features/book/components/booklist/booklist.
     CounterComponent,
     BookComponent,
     BookEntryComponent,
-    BooklistComponent
+    BooklistComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +47,7 @@ import { BooklistComponent } from './features/book/components/booklist/booklist.
     StoreModule.forRoot(reducers),
     StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot([CounterEffects]),
-    TodoModule
+    TodoModule,
   ],
   providers: [DataService, ShoppingDataService],
   bootstrap: [AppComponent]

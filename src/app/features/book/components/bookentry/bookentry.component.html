@@ -6,13 +6,13 @@
   <input class="form-control"
          #author>
   <label>Format:</label>
-  <select>
-    <option value="Hardcoded">"Hardcoded"</option>
-    <option value="Paperback">"Paperback"</option>
-    <option value="E-Book">"E-Book"</option>
+  <select #format>
+    <option value="Hardcoded">Hardcoded</option>
+    <option value="Paperback">Paperback</option>
+    <option value="E-Book">E-Book</option>
   </select>
   <input type="button"
          class="btn btn-primary"
-         (click)="insert(title)"
+         (click)="insert(title, author, format)"
          value="Add Book">
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { BookInfo } from '../../models';
 
 @Component({
   selector: 'app-booklist',
@@ -7,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BooklistComponent implements OnInit {
 
-  // @Input() books: TodoItem[] = [];
+  @Input() books: BookInfo[] = [];
 
   constructor() { }
 
